@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
   hero: { backgroundColor: colors.chalk, padding: 30, paddingBottom: 26, borderBottomLeftRadius: 26, borderBottomRightRadius: 26 },
   heroTitle: { fontFamily: fonts.display, fontSize: 22, fontWeight: '600', color: colors.paperSoft, textAlign: 'center' },
   heroSub: { color: 'rgba(250,246,232,0.68)', fontSize: 13, textAlign: 'center', marginTop: 6 },
-  searchBar: { flexDirection: 'row', alignItems: 'center', gap: 10, marginHorizontal: 20, marginTop: -22, padding: 13, borderRadius: 999, backgroundColor: colors.white, shadowColor: '#1B2A1F', shadowOffset: { width: 0, height: 10 }, shadowOpacity: 0.35, shadowRadius: 30, elevation: 10 },
+  searchBar: { flexDirection: 'row', alignItems: 'center', gap: 10, marginHorizontal: 20, marginTop: -22, padding: 13, borderRadius: 999, backgroundColor: colors.white, boxShadow: '0 10px 30px -8px rgba(27,42,31,0.35)', elevation: 10 },
   searchIcon: { fontSize: 18 },
   searchInput: { flex: 1, fontSize: 14 },
   searchBtn: { width: 42, height: 42, borderRadius: 21, backgroundColor: colors.chalk, justifyContent: 'center', alignItems: 'center' },

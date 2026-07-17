@@ -21,6 +21,10 @@ export default function UnitWorkspace() {
   const [showCreateRoom, setShowCreateRoom] = useState(false);
   const [newRoomCode, setNewRoomCode] = useState('');
 
+  const safeBack = useCallback(() => {
+    router.back();
+  }, []);
+
   if (!u) {
     return (
       <SafeScreen>
@@ -105,7 +109,7 @@ export default function UnitWorkspace() {
         <TopBar
           title={u.code}
           backLabel="Units"
-          onBack={() => router.back()}
+          onBack={safeBack}
           breadcrumb="Units / Workspace"
           right={
             !u.hasRoom && (

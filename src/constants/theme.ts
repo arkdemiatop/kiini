@@ -36,17 +36,11 @@ export const radii = {
 
 export const shadows = {
   card: {
-    shadowColor: '#1B2A1F',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.06,
-    shadowRadius: 2,
+    boxShadow: '0 1px 2px rgba(27,42,31,0.06), 0 6px 18px -10px rgba(27,42,31,0.25)',
     elevation: 2,
   },
   pop: {
-    shadowColor: '#1B2A1F',
-    shadowOffset: { width: 0, height: 10 },
-    shadowOpacity: 0.35,
-    shadowRadius: 30,
+    boxShadow: '0 10px 30px -8px rgba(27,42,31,0.35)',
     elevation: 10,
   },
 } as const;

@@ -31,7 +31,7 @@ export function ToastProvider({ children }: { children: any }) {
   return (
     <View style={styles.wrapper}>
       {children}
-      <View style={styles.container} pointerEvents="none">
+      <View style={[styles.container, { pointerEvents: 'none' as any }]}>
         {items.map(t => (
           <View
             key={t.id}
@@ -70,10 +70,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 18,
     borderRadius: 12,
-    shadowColor: '#1B2A1F',
-    shadowOffset: { width: 0, height: 10 },
-    shadowOpacity: 0.35,
-    shadowRadius: 30,
+    boxShadow: '0 10px 30px -8px rgba(27,42,31,0.35)',
     elevation: 10,
   },
   info: { backgroundColor: colors.indigo },
